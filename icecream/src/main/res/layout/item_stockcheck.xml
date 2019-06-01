@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90px"
+        android:layout_height="110px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="2px"
+        android:layout_marginBottom="2px"
+        android:scaleType="fitXY"
+        android:src="@drawable/nogoods" />
+
+
+    <TextView
+        android:id="@+id/trackno"
+        android:layout_width="220px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:text="货道：1"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <TextView
+        android:id="@+id/trackgoodscode"
+        android:layout_width="220px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trackno"
+        android:layout_marginTop="4px"
+        android:layout_alignLeft="@+id/trackno"
+        android:text="130001"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <TextView
+        android:id="@+id/trackgoodsname"
+        android:layout_width="360px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trackgoodscode"
+        android:layout_alignLeft="@+id/trackgoodscode"
+        android:layout_marginTop="4px"
+        android:text="雪碧清爽柠檬味汽水"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+
+    <TextView
+        android:id="@+id/xitongnumtxt"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6px"
+        android:layout_toRightOf="@+id/trackno"
+        android:layout_marginLeft="20px"
+        android:text="系统库存"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <TextView
+        android:id="@+id/xitongnum"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xitongnumtxt"
+        android:layout_alignLeft="@+id/xitongnumtxt"
+        android:text="15"
+        android:gravity="center"
+        android:layout_marginTop="6px"
+        android:ellipsize="marquee"
+        android:textSize="24dp"  />
+
+    <TextView
+        android:id="@+id/realnumtxt"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/xitongnumtxt"
+        android:layout_marginTop="6px"
+        android:layout_marginLeft="20px"
+        android:text="实际库存"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <TextView
+        android:id="@+id/realnum"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/realnumtxt"
+        android:layout_alignLeft="@+id/realnumtxt"
+        android:layout_marginTop="6px"
+        android:gravity="center"
+        android:text="15"
+        android:ellipsize="marquee"
+        android:textSize="24dp"  />
+
+    <TextView
+        android:id="@+id/batchenddaytxt"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/trackgoodsname"
+        android:layout_alignTop="@+id/trackgoodsname"
+        android:layout_alignLeft="@+id/xitongnumtxt"
+        android:text=""
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <Button
+        android:id="@+id/subbtn"
+        android:layout_width="60px"
+        android:layout_height="80px"
+        android:text="-"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/realnum"
+        android:layout_marginLeft="20px"/>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="60px"
+        android:layout_height="80px"
+        android:text="+"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/subbtn"
+        android:layout_marginLeft="20px"/>
+
+    <TextView
+        android:id="@+id/addsubnum"
+        android:layout_width="60px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/addbtn"
+        android:layout_marginLeft="10px"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="+1"
+        android:ellipsize="marquee"
+        android:textSize="24dp"  />
+
+
+
+</RelativeLayout>

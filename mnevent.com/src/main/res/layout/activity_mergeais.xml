@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+<com.mnevent.hz.Utils.GoodsScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/topbar_title"
+            android:layout_width="fill_parent"
+            android:layout_height="70px"
+            android:background="#CDCDB4" >
+
+            <TextView
+                android:id="@+id/titlename"
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="机器的启用(合并，禁用)和行走设置"
+                android:textColor="@android:color/black"
+                android:textSize="32px"
+                />
+
+            <TextView
+                android:id="@+id/titlename2"
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/titlename"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="*点击编号修改步数(步数:满仓)"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="30px"
+                />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10px"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="32px"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/title1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topbar_title"
+            android:background="@android:color/white"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:id="@+id/alllianban"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="当前链板总数:18"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="32px"
+                />
+            <Button
+                android:id="@+id/btn_alllianban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/alllianban"
+                android:layout_marginLeft="10px"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="调整"
+                android:textSize="36px"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@+id/btn_alllianban"
+                android:text="（调整步数后，会自动计算出全位置的数量并四舍五入)(可在设置全位置数量页面再次调整)"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="30px"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title1"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                />
+
+            <!-- <TextView
+                 android:id="@+id/t0"
+                 android:layout_width="69px"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@+id/tt"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="25px"
+                 android:gravity="center"
+                 android:text="0"
+                 android:textColor="@android:color/black"
+                 android:textSize="34px"
+                 />-->
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tt"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t4"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t5"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t6"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t7"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+            <TextView
+                android:id="@+id/t9"
+                android:layout_width="69px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t8"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@android:color/black"
+                android:textSize="34px"
+                />
+        </RelativeLayout>
+        <com.mnevent.hz.Utils.CustomVRecyclerView
+            android:id="@+id/recy1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:layout_below="@id/title1"
+            >
+
+        </com.mnevent.hz.Utils.CustomVRecyclerView>
+      <!--  <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="100px"
+            android:layout_below="@id/title1"
+            android:layout_marginBottom="550px">
+
+        </android.support.v7.widget.RecyclerView>-->
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/title"
+            android:background="#aa000000" />
+        <RelativeLayout
+            android:id="@+id/rela1"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/hui_color7"
+            android:layout_below="@id/recy1"
+            >
+            <TextView
+                android:id="@+id/tt771tv44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="说明："
+                android:textColor="@android:color/black"
+                android:textSize="30px"
+                />
+
+            <ImageView
+                android:id="@+id/tt771"
+                android:layout_width="69px"
+                android:layout_height="42px"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@+id/tt771tv44"
+                android:src="@drawable/unincorporated"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tt771tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tt771"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="正常的通道(1)"
+                android:textColor="@android:color/black"
+                android:textSize="30px"
+                />
+
+            <ImageView
+                android:id="@+id/tt7712"
+                android:layout_width="69px"
+                android:layout_height="42px"
+                android:layout_marginLeft="40px"
+                android:src="@drawable/forbidden"
+                android:layout_toRightOf="@+id/tt771tv"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tt7712tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tt7712"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="合并通道(*)"
+                android:textColor="@android:color/black"
+                android:textSize="30px"
+                />
+
+            <ImageView
+                android:id="@+id/tt7713"
+                android:layout_width="69px"
+                android:layout_height="42px"
+                android:layout_marginLeft="40px"
+                android:src="@drawable/merge"
+                android:layout_toRightOf="@+id/tt7712tv"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tt7713tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tt7713"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="禁用通道(-)"
+                android:textColor="@android:color/black"
+                android:textSize="30px"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title4"
+            android:layout_width="match_parent"
+            android:layout_height="450px"
+            android:layout_below="@id/rela1"
+            android:layout_alignParentBottom="true"
+            >
+
+            <!--android:text="获取硬件的货道信息"-->
+            <TextView
+                android:id="@+id/get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/textview_neihuikuang"
+                android:padding="10px"
+                android:text="获取硬件通道信息"
+                android:textColor="@color/hei_color1"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/get"
+                android:textColor="@color/hong_color1"
+                android:textSize="28px" />
+
+            <!--android:text="设置硬件的货道信息"-->
+            <TextView
+                android:id="@+id/set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/textview_neihuikuang"
+                android:padding="10px"
+                android:text="设置硬件通道信息"
+                android:textColor="@color/hei_color1"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/textlog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/get"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:textColor="@color/hei_color1"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</com.mnevent.hz.Utils.GoodsScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="chanpin" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+        <mapping class="com.mnevent.hz.litemolder.ProductMolder"></mapping>
+        <mapping class="com.mnevent.hz.litemolder.PathwayMolder"></mapping>
+        <mapping class="com.mnevent.hz.litemolder.ProductlibMolder"></mapping>
+        <mapping class="com.mnevent.hz.litemolder.DrivetojudgeMolder"></mapping>
+        <mapping class="com.mnevent.hz.litemolder.ProductdisplayMolder"></mapping>
+        <mapping class="com.mnevent.hz.litemolder.TrackstatusMolder"></mapping>
+        <mapping class="com.mnevent.hz.litemolder.LocalgoodsMolder"></mapping>
+
+    </list>
+</litepal>

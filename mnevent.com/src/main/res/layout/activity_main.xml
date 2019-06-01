@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mnevent.hz.MainActivity">
+
+   <!-- <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="1080px"
+        android:id="@+id/recy">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lan_color3"
+        android:layout_below="@id/recy">
+
+        <com.mnevent.hz.View.SimerTextview
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="正在等待您的购买..."
+            android:textSize="60sp"/>
+    </RelativeLayout>-->
+
+    <com.mnevent.hz.View.CarouselViewPager
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.mnevent.hz.View.CarouselViewPager>
+
+</RelativeLayout>

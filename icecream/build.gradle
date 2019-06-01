@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+
+
+    defaultConfig {
+        applicationId "com.freshtribes.icecream"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 108
+        versionName "1.0.8"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "WvxGBLmEiLA8W7QktAuZc2",
+                GETUI_APP_KEY   : "AbNYve4Mau9gMQVj6VxJxA",
+                GETUI_APP_SECRET: "vNrBqX95KrANYloo7MY6x6"
+        ]
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+
+        def alias = "freshandroidkey"
+        def keypassword = "zhongya189"
+        def storepassword = "fresh189"
+        def filePath = "C:/jks/fresh.jks"  //签名文件路径 如：../faceprint.jks
+
+        debug {
+            keyAlias alias
+            keyPassword keypassword
+            storeFile file(filePath)
+            storePassword(storepassword)
+        }
+        release {
+            keyAlias alias
+            keyPassword keypassword
+            storeFile file(filePath)
+            storePassword(storepassword)
+        }
+    }
+
+}
+
+/*repositories {
+
+    flatDir {
+        dirs 'libs', project(':faceplatform-ui').file('libs')
+    }
+
+}*/
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation files('libs/bdasr_V3_20171108_9800a2a.jar')
+    compile 'org.jetbrains:annotations-java5:15.0'
+//    compile project(':faceplatform-ui')
+    implementation files('libs/okio-1.11.0.jar')
+    implementation files('libs/okhttp-3.6.0.jar')
+    compile 'com.getui:sdk:2.11.1.0'
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="350px"
+    android:layout_height="60px">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+        android:textColor="@color/hei_color1"
+        android:layout_centerVertical="true"
+        android:text="人脸支付"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_toRightOf="@id/text"
+        android:layout_centerVertical="true"
+        android:background="@drawable/flclick"
+        android:layout_marginLeft="20px"/>
+
+</RelativeLayout>

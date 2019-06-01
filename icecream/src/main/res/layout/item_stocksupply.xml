@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90px"
+        android:layout_height="110px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="2px"
+        android:layout_marginBottom="2px"
+        android:scaleType="fitXY"
+        android:src="@drawable/nogoods" />
+
+
+    <TextView
+        android:id="@+id/trackno"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px"
+        android:text="货道：1"
+        android:ellipsize="marquee"
+        android:textSize="16dp"  />
+
+    <TextView
+        android:id="@+id/trackgoodscode"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trackno"
+        android:layout_marginTop="4px"
+        android:layout_alignLeft="@+id/trackno"
+        android:text="130001"
+        android:ellipsize="marquee"
+        android:textSize="16dp"  />
+
+    <TextView
+        android:id="@+id/trackgoodsname"
+        android:layout_width="360px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trackgoodscode"
+        android:layout_alignLeft="@+id/trackgoodscode"
+        android:layout_marginTop="4px"
+        android:text="雪碧清爽柠檬味汽水"
+        android:ellipsize="marquee"
+        android:textSize="16dp"  />
+
+
+    <TextView
+        android:id="@+id/xianzainumtxt"
+        android:layout_width="80px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/trackno"
+        android:layout_marginLeft="2px"
+        android:text="现在库存"
+        android:ellipsize="marquee"
+        android:textSize="16dp"  />
+
+    <TextView
+        android:id="@+id/stocknum"
+        android:layout_width="80px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xianzainumtxt"
+        android:layout_alignLeft="@+id/xianzainumtxt"
+        android:text="15"
+        android:gravity="center"
+        android:layout_marginTop="10px"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <TextView
+        android:id="@+id/supplytxt"
+        android:layout_width="80px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/xianzainumtxt"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="2px"
+        android:text="补货后库存"
+        android:ellipsize="marquee"
+        android:textSize="16dp"  />
+
+    <TextView
+        android:id="@+id/supplynum"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supplytxt"
+        android:layout_alignLeft="@+id/supplytxt"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:text="15"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <TextView
+        android:id="@+id/addsubnum"
+        android:layout_width="60px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/xianzainumtxt"
+        android:layout_marginLeft="0px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0px"
+        android:gravity="center"
+        android:text="+1"
+        android:ellipsize="marquee"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24dp"  />
+
+    <Button
+        android:id="@+id/subbtn"
+        android:layout_width="50px"
+        android:layout_height="80px"
+        android:text="-"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/supplynum"
+        android:layout_marginLeft="10px"/>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="60px"
+        android:layout_height="80px"
+        android:text="+"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/subbtn"
+        android:layout_marginLeft="10px"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewcash"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="5px"
+        android:layout_toRightOf="@+id/addbtn"
+        android:scaleType="fitXY"
+        android:src="@drawable/iconcash" />
+
+
+    <TextView
+        android:id="@+id/cashprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewcash"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="15px"
+        android:text="1.00"
+        android:textSize="16dp"  />
+
+    <ImageView
+        android:id="@+id/imageViewcard"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="5px"
+        android:layout_toRightOf="@+id/cashprice"
+        android:scaleType="fitXY"
+        android:src="@drawable/iconcard" />
+
+
+    <TextView
+        android:id="@+id/cardprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewcard"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="15px"
+        android:text="1.00"
+        android:textSize="16dp"  />
+
+    <ImageView
+        android:id="@+id/imageViewali"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="55px"
+        android:layout_toRightOf="@+id/addbtn"
+        android:scaleType="fitXY"
+        android:src="@drawable/iconalipay" />
+
+    <TextView
+        android:id="@+id/aliprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewali"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="65px"
+        android:text="1.00"
+        android:textSize="16dp"  />
+
+    <ImageView
+        android:id="@+id/imageViewwx"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="55px"
+        android:layout_toRightOf="@+id/aliprice"
+        android:scaleType="fitXY"
+        android:src="@drawable/iconweixin" />
+
+    <TextView
+        android:id="@+id/wxprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewwx"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="65px"
+        android:text="1.00"
+        android:textSize="16dp"  />
+
+    <Button
+        android:id="@+id/changegoodsbtn"
+        android:layout_width="50px"
+        android:layout_height="80px"
+        android:text="换"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10px"/>
+
+</RelativeLayout>

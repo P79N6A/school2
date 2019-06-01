@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/topbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#CDCDB4" >
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:text="下载商品和设定价格"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/input_title02"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/topbar_title" >
+
+
+        <TextView
+            android:id="@+id/localgoodsnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2px"
+            android:layout_centerVertical="true"
+            android:text="现在本地的商品名称和图片:0"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            />
+
+
+        <Button
+            android:id="@+id/getagain"
+            android:layout_width="290px"
+            android:layout_height="70px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/localgoodsnum"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/orange_selector"
+            android:text="从服务器获取(有相同时价格不变)"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/getagain"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/orange_selector"
+            android:text="删除本地所有"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title04"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="00px"
+        android:layout_below="@+id/input_title02"
+        android:background="@null" >
+
+
+        <TextView
+            android:id="@+id/didinfo"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_marginTop="0px"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|bottom"
+            android:text="信息提示："
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/input_title04"
+        android:background="@null"
+        android:divider="#000"
+        android:dividerHeight="2dp"
+        android:layout_marginBottom="4dp">
+    </ListView>
+
+
+</RelativeLayout>

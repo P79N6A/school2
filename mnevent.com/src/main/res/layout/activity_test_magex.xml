@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/topbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/input_title04"
+        android:background="#CDCDB4">
+
+        <!--android:text="Magex Aisle test"-->
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:text="Magex货道测试"
+            android:textColor="@android:color/black"
+            android:textSize="32px" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:text="返回"
+            android:textColor="@android:color/black"
+            android:textSize="24px" />
+
+        <!--android:text="Empty test results"-->
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/btn_back"
+            android:text="清空测试结果"
+            android:textColor="@android:color/black"
+            android:textSize="24px" />
+
+        <!--android:text="To obtain state"-->
+        <Button
+            android:id="@+id/btn_getstatus"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/btn_clear"
+            android:text="获取状态"
+            android:textColor="@android:color/black"
+            android:textSize="24px" />
+
+        <!--android:text="To obtain the temperature"-->
+        <Button
+            android:id="@+id/btn_gettemp"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/btn_getstatus"
+            android:text="获取温度"
+            android:textColor="@android:color/black"
+            android:textSize="24px" />
+
+        <Button
+            android:id="@+id/btn_clearaway"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/btn_gettemp"
+            android:text="清除锁定货道"
+            android:textColor="@android:color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/input_title01"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="4px"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/topbar_title"
+        android:background="@drawable/testone" >
+
+
+        <!--android:text="Whole or single floor"-->
+        <TextView
+            android:id="@+id/vmcode_titlename2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:text="全体或单层"
+            android:textColor="@android:color/black"
+            android:textSize="24px"
+            />
+
+        <Spinner
+            android:id="@+id/SpinnerOneLevel"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/SpinnerFor"
+            android:layout_toEndOf="@+id/vmcode_titlename2"></Spinner>
+        <!--android:text="cycles:"-->
+        <TextView
+            android:id="@+id/forleveltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:layout_marginLeft="10px"
+            android:text="循环次数:"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/SpinnerOneLevel"
+            android:textColor="#ff0000"
+            android:textSize="24px"
+            />
+        <Spinner android:id="@+id/SpinnerFor"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:layout_width="120dp"
+            android:layout_toRightOf="@+id/forleveltv"
+            android:layout_height="wrap_content"></Spinner>
+
+
+        <Button
+            android:id="@+id/onelevel_bt"
+            android:layout_width="160px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="测试"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title02"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="4px"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/input_title01"
+        android:background="@drawable/testone" >
+
+
+        <!--android:text="A single aisle"-->
+        <TextView
+            android:id="@+id/vmcode_titlename3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:text="单个货道"
+            android:textColor="#555"
+            android:textSize="24px"
+            />
+
+        <Spinner android:id="@+id/SpinnerOneTrack"
+            android:layout_toRightOf="@+id/vmcode_titlename3"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <Button
+            android:id="@+id/onetrack_bt"
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="4px"
+            android:layout_marginBottom="4px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="测试"
+            android:textSize="24px"/>
+
+        <!--android:text="This cargo channel is reset"-->
+        <Button
+            android:id="@+id/onetrackreset_bt"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/onetrack_bt"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:text="此货道复位"
+
+            android:textSize="16px"
+            android:textColor="@android:color/black"/>
+
+        <!-- android:text="Reset the cargo channel on this floor"-->
+        <Button
+            android:id="@+id/onetrackallreset_bt"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/onetrackreset_bt"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:text="此层货道复位"
+
+            android:textSize="16px"
+            android:textColor="@android:color/black"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_rele"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="4px"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/input_title02"
+        android:background="@drawable/testone" >
+        <!--android:text="Moving goods bucket"-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/move"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="移动货斗"
+            android:layout_marginBottom="4px"
+            android:layout_marginRight="10px"
+
+            android:textSize="24px"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/input_title022"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="4px"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/input_rele"
+        android:background="@drawable/testone" >
+
+
+        <!--android:text="Fault trajectory:"-->
+        <TextView
+            android:id="@+id/errotrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="10px"
+            android:text="故障轨道:"
+            android:textColor="#787878"
+            android:textSize="34px"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <!--android:text="The test results"-->
+    <TextView
+        android:id="@+id/input_title04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="12px"
+        android:layout_below="@+id/input_title022"
+        android:textColor="@android:color/black"
+        android:text="测试结果"
+        android:textSize="34px"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/input_title05"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="0px"
+        android:layout_marginBottom="50px"
+        android:layout_below="@+id/input_title04"
+        android:background="@drawable/testmulti" >
+
+        <EditText
+            android:id="@+id/test_result_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:maxLines="58"
+            android:textColor="#000000"
+            android:textSize="30px"
+            android:enabled="false"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hintinfo"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0px"
+        android:paddingLeft="4px"
+        android:gravity="left"
+        android:text=""
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textSize="28px"
+        />
+
+
+</RelativeLayout>

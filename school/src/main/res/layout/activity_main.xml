@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:id="@+id/moneybackrl"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+        android:layout_marginBottom="0px"
+        android:background="@drawable/moneytitle" >
+
+        <ImageView
+            android:id="@+id/imageViewsignal"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8px"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:src="@drawable/signal_type4_s1" />
+
+        <TextView
+            android:id="@+id/netstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="41px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageViewsignal"
+            android:layout_marginLeft="6px"
+            android:text="4G"
+            android:paddingRight="4px"
+            android:gravity="right|center_vertical"
+            android:textColor="#003E3E"
+            android:textSize="28sp" />
+
+
+        <TextView
+            android:id="@+id/statusdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:layout_marginRight="5px"
+            android:text=""
+            android:textColor="#003E3E"
+            android:textSize="28sp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/macidtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:text="机器编号："
+            android:textColor="#003E3E"
+            android:textSize="22sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/goodsrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moneybackrl"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/goodsbtn1"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoods_selector" />
+
+        <ImageView
+            android:id="@+id/goods1"
+            android:layout_width="180px"
+            android:layout_height="220px"
+            android:contentDescription=""
+            android:layout_marginTop="10px"
+            android:layout_alignLeft="@+id/goodsbtn1"
+            android:layout_alignTop="@+id/goodsbtn1"
+            android:src="@drawable/samplegoods" />
+
+        <ImageView
+            android:id="@+id/goodsbtn1saleover"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_alignLeft="@+id/goodsbtn1"
+            android:layout_alignTop="@+id/goodsbtn1"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoodsover" />
+
+
+        <TextView
+            android:id="@+id/goodsname1"
+            android:layout_alignLeft="@+id/goodsbtn1"
+            android:layout_alignTop="@+id/goodsbtn1"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="240px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="可口可乐灌装350ml"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/goodsprice1"
+            android:layout_alignLeft="@+id/goodsbtn1"
+            android:layout_alignTop="@+id/goodsbtn1"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="260px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="￥3.5"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#F00" />
+
+        <ImageView
+            android:id="@+id/goodsbtn2"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_marginLeft="210px"
+            android:layout_marginTop="10px"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoods_selector" />
+
+        <ImageView
+            android:id="@+id/goods2"
+            android:layout_width="180px"
+            android:layout_height="220px"
+            android:contentDescription=""
+            android:layout_marginTop="10px"
+            android:layout_alignLeft="@+id/goodsbtn2"
+            android:layout_alignTop="@+id/goodsbtn2"
+            android:src="@drawable/samplegoods" />
+
+        <ImageView
+            android:id="@+id/goodsbtn2saleover"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_alignLeft="@+id/goodsbtn2"
+            android:layout_alignTop="@+id/goodsbtn2"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoodsover" />
+
+
+        <TextView
+            android:id="@+id/goodsname2"
+            android:layout_alignLeft="@+id/goodsbtn2"
+            android:layout_alignTop="@+id/goodsbtn2"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="240px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="可口可乐灌装350ml"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/goodsprice2"
+            android:layout_alignLeft="@+id/goodsbtn2"
+            android:layout_alignTop="@+id/goodsbtn2"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="260px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="￥3.5"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#F00" />
+
+        <ImageView
+            android:id="@+id/goodsbtn3"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_marginLeft="410px"
+            android:layout_marginTop="10px"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoods_selector" />
+
+        <ImageView
+            android:id="@+id/goods3"
+            android:layout_width="180px"
+            android:layout_height="220px"
+            android:contentDescription=""
+            android:layout_marginTop="10px"
+            android:layout_alignLeft="@+id/goodsbtn3"
+            android:layout_alignTop="@+id/goodsbtn3"
+            android:src="@drawable/samplegoods" />
+
+        <ImageView
+            android:id="@+id/goodsbtn3saleover"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_alignLeft="@+id/goodsbtn3"
+            android:layout_alignTop="@+id/goodsbtn3"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoodsover" />
+
+
+        <TextView
+            android:id="@+id/goodsname3"
+            android:layout_alignLeft="@+id/goodsbtn3"
+            android:layout_alignTop="@+id/goodsbtn3"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="240px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="可口可乐灌装350ml"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/goodsprice3"
+            android:layout_alignLeft="@+id/goodsbtn3"
+            android:layout_alignTop="@+id/goodsbtn3"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="260px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="￥3.5"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#F00" />
+
+        <ImageView
+            android:id="@+id/goodsbtn4"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="320px"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoods_selector" />
+
+        <ImageView
+            android:id="@+id/goods4"
+            android:layout_width="180px"
+            android:layout_height="220px"
+            android:contentDescription=""
+            android:layout_marginTop="10px"
+            android:layout_alignLeft="@+id/goodsbtn4"
+            android:layout_alignTop="@+id/goodsbtn4"
+            android:src="@drawable/samplegoods" />
+
+        <ImageView
+            android:id="@+id/goodsbtn4saleover"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_alignLeft="@+id/goodsbtn4"
+            android:layout_alignTop="@+id/goodsbtn4"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoodsover" />
+
+
+        <TextView
+            android:id="@+id/goodsname4"
+            android:layout_alignLeft="@+id/goodsbtn4"
+            android:layout_alignTop="@+id/goodsbtn4"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="240px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="可口可乐灌装350ml"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/goodsprice4"
+            android:layout_alignLeft="@+id/goodsbtn4"
+            android:layout_alignTop="@+id/goodsbtn4"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="260px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="￥3.5"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#F00" />
+
+        <ImageView
+            android:id="@+id/goodsbtn5"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_marginLeft="210px"
+            android:layout_marginTop="320px"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoods_selector" />
+
+        <ImageView
+            android:id="@+id/goods5"
+            android:layout_width="180px"
+            android:layout_height="220px"
+            android:contentDescription=""
+            android:layout_marginTop="10px"
+            android:layout_alignLeft="@+id/goodsbtn5"
+            android:layout_alignTop="@+id/goodsbtn5"
+            android:src="@drawable/samplegoods" />
+
+        <ImageView
+            android:id="@+id/goodsbtn5saleover"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_alignLeft="@+id/goodsbtn5"
+            android:layout_alignTop="@+id/goodsbtn5"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoodsover" />
+
+
+        <TextView
+            android:id="@+id/goodsname5"
+            android:layout_alignLeft="@+id/goodsbtn5"
+            android:layout_alignTop="@+id/goodsbtn5"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="240px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="可口可乐灌装350ml"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/goodsprice5"
+            android:layout_alignLeft="@+id/goodsbtn5"
+            android:layout_alignTop="@+id/goodsbtn5"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="260px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="￥3.5"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#F00" />
+
+        <ImageView
+            android:id="@+id/goodsbtn6"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_marginLeft="410px"
+            android:layout_marginTop="320px"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoods_selector" />
+
+        <ImageView
+            android:id="@+id/goods6"
+            android:layout_width="180px"
+            android:layout_height="220px"
+            android:contentDescription=""
+            android:layout_marginTop="10px"
+            android:layout_alignLeft="@+id/goodsbtn6"
+            android:layout_alignTop="@+id/goodsbtn6"
+            android:src="@drawable/samplegoods" />
+
+        <ImageView
+            android:id="@+id/goodsbtn6saleover"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:contentDescription=""
+            android:layout_alignLeft="@+id/goodsbtn6"
+            android:layout_alignTop="@+id/goodsbtn6"
+            android:scaleType="fitXY"
+            android:src="@drawable/aligoodsover" />
+
+
+        <TextView
+            android:id="@+id/goodsname6"
+            android:layout_alignLeft="@+id/goodsbtn6"
+            android:layout_alignTop="@+id/goodsbtn6"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="240px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="可口可乐灌装350ml"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/goodsprice6"
+            android:layout_alignLeft="@+id/goodsbtn6"
+            android:layout_alignTop="@+id/goodsbtn6"
+            android:layout_width="180px"
+            android:layout_height="30px"
+            android:layout_marginTop="260px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="￥3.5"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#F00" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1_1"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10px"
+        android:layout_height="1dp"
+        android:layout_below="@+id/goodsrl"
+        android:background="#aa000000" />
+
+    <RelativeLayout
+        android:id="@+id/hintrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line1_1"
+        android:background="#33F" >
+
+        <ImageView
+            android:id="@+id/goodsselect"
+            android:layout_width="180px"
+            android:layout_height="220px"
+            android:contentDescription=""
+            android:layout_marginLeft="2px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/samplegoods" />
+
+        <TextView
+            android:id="@+id/counttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10px"
+            android:layout_marginRight="10px"
+            android:gravity="left"
+            android:text="30S"
+            android:textColor="#FF0"
+            android:textSize="48sp"
+            />
+
+        <TextView
+            android:id="@+id/hinttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            android:layout_marginLeft="182px"
+            android:gravity="left"
+            android:layout_centerVertical="true"
+            android:text="请按数字按钮选择商品..."
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/tracknotv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="10px"
+            android:gravity="right"
+            android:text=""
+            android:textSize="36sp"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

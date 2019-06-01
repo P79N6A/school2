@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="140px">
+
+<ImageView
+    android:layout_width="120px"
+    android:layout_height="120px"
+    android:src="@drawable/noimage"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10px"
+    android:id="@+id/image"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hei_color1"
+        android:text="yanjing"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="10px"
+        android:textSize="24px"
+        android:id="@+id/name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="130px"
+        android:id="@+id/price"
+        android:textSize="22px"
+        android:textColor="@color/hei_color1"
+        android:text="$:20"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lan_color2"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

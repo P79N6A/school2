@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="240px"
+    >
+
+<ImageView
+    android:layout_width="200px"
+    android:layout_height="200px"
+    android:src="@drawable/noimage"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10px"
+    android:id="@+id/image"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hei_color1"
+        android:text="yanjing"
+        android:layout_marginLeft="240px"
+        android:layout_marginTop="20px"
+        android:textSize="24px"
+        android:id="@+id/name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="240px"
+        android:id="@+id/price"
+        android:textSize="22px"
+        android:textColor="@color/hei_color1"
+        android:text="$:20"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/the_price"
+        android:text="修改价格"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_centerVertical="true"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lan_color2"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

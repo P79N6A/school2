@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/topbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#CDCDB4" >
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:text="盘点"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="240px"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_back"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="盘点结果保存"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/checktotalrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar_title"
+        android:layout_marginTop="10px">
+
+        <TextView
+            android:id="@+id/stockchecktimetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/changenumtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checktotalrl"
+        android:divider="#1db"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"/>
+
+
+</RelativeLayout>

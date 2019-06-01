@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="220px"
+        android:layout_height="280px"
+        android:background="@color/navpage"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:text="商品名："
+        android:layout_below="@+id/image"
+        android:id="@+id/name"
+        android:layout_marginTop="10px"
+        android:layout_centerHorizontal="true"
+        android:textSize="25px"
+        android:textColor="@color/hei_color3"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pice"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10px"
+        android:textColor="@color/hong_color2"
+        android:textSize="28px"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

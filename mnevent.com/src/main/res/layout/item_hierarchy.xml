@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="70px">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="600px"
+        android:layout_height="50px"
+        android:textSize="28px"
+        android:textColor="@color/hei_color1"
+        android:text="Number of main engine track layers："
+        android:gravity="center"
+        android:layout_marginTop="10px"/>
+    <TextView
+
+        android:layout_width="180px"
+        android:layout_height="50px"
+        android:background="@drawable/textview_neibaikuang"
+        android:layout_marginLeft="600px"
+        android:layout_marginTop="10px"
+
+        android:id="@+id/text1"
+        android:textColor="@color/hei_color1"
+        android:textSize="28px"/>
+    <ImageView
+        android:layout_width="35px"
+        android:layout_height="35px"
+        android:background="@drawable/xiasanjiao"
+        android:layout_marginTop="20px"
+        android:layout_alignRight="@id/text1"/>
+</RelativeLayout>

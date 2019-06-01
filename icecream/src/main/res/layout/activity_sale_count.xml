@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/topbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#CDCDB4" >
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:text="销售记录"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_back"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="查询"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/datetimerl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar_title"
+        android:layout_marginTop="10px">
+
+        <TextView
+            android:id="@+id/startdatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text="记录开始时间："
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/datetimetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/startdatetime"
+            android:layout_marginLeft="20px"
+            android:text="2017-08-09 12:53"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_changedate"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/datetimetv"
+            android:gravity="center"
+            android:text="改日期"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"/>
+        <Button
+            android:id="@+id/btn_changetime"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_changedate"
+            android:gravity="center"
+            android:text="改时间"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"/>
+        <Button
+            android:id="@+id/btn_lastsupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_changetime"
+            android:gravity="center"
+            android:text="上次补货时间"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sumrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datetimerl"
+        android:layout_marginTop="10px">
+
+        <TextView
+            android:id="@+id/sumtotaltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:lineSpacingMultiplier="1.2"
+            android:text="总计：12899.00元（1909笔）\n其中：现金234.50元（111笔）、会员：44455元（3334笔）\n            支付宝：1234.00元（134笔）、微信：2345.00元（345笔）"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sumrl"
+        android:divider="#CCC"
+        android:dividerHeight="2px"
+        android:background="#333333"
+        android:textSize="20sp"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"/>
+
+
+</RelativeLayout>

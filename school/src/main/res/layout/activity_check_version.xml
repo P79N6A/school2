@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/topbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#CDCDB4" >
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:text="查看新版本"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/topbar_title">
+
+        <TextView
+            android:id="@+id/nowversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text="程序版本号："
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/input_title01">
+
+        <TextView
+            android:id="@+id/dbversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text="服务器端的最新版本："
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/input_title03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="20px"
+        android:layout_below="@+id/input_title02"
+        android:background="@null" >
+
+        <Button
+            android:id="@+id/submitdlupdate_bt"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20px"
+            android:text="下载更新"
+            android:textColor="@android:color/black"
+            android:textSize="26sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/submitdlupdate_bt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:text="*安装成功后，在应用中点击启动；或者关机重启"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

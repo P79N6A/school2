@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/topbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#CDCDB4" >
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:text="上传日志"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/topbar_title">
+
+        <TextView
+            android:id="@+id/filename1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_upload1"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="上传"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+        android:layout_below="@+id/input_title01">
+
+        <TextView
+            android:id="@+id/filename2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_upload2"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="上传"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/input_title03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+        android:layout_below="@+id/input_title02">
+
+        <TextView
+            android:id="@+id/filename3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_upload3"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="上传"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+        android:layout_below="@+id/input_title03">
+
+        <TextView
+            android:id="@+id/filename4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_upload4"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="上传"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/input_title05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+        android:layout_below="@+id/input_title04">
+
+        <TextView
+            android:id="@+id/filename5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_upload5"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="上传"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+        android:layout_below="@+id/input_title05">
+
+        <TextView
+            android:id="@+id/filename6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_upload6"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="上传"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_title07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+        android:layout_below="@+id/input_title06">
+
+        <TextView
+            android:id="@+id/filename7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_upload7"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="上传"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

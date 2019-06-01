@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/trackno"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40px"
+        android:text="货道：1"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <TextView
+        android:id="@+id/trackmax"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/trackno"
+        android:layout_toRightOf="@+id/trackno"
+        android:layout_marginLeft="20px"
+        android:text="满仓数：15"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <TextView
+        android:id="@+id/goodsname"
+        android:layout_width="360px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/trackmax"
+        android:layout_below="@+id/trackno"
+        android:text="商品：130001雪碧"
+        android:ellipsize="marquee"
+        android:textSize="20dp"  />
+
+    <Button
+        android:id="@+id/changemaxbtn"
+        android:layout_width="140px"
+        android:layout_height="40px"
+        android:text="调整满仓数"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="500px"/>
+
+    <Button
+        android:id="@+id/sameasupbtn"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:text="同上"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="670px"/>
+
+</RelativeLayout>

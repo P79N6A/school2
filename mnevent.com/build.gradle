@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+
+    signingConfigs {
+        release {
+            keyAlias 'freshandroidkey'
+            keyPassword 'zhongya189'
+            storeFile file('C:/jks/fresh.jks')
+            storePassword 'fresh189'
+        }
+        debug {
+            keyAlias 'freshandroidkey'
+            keyPassword 'zhongya189'
+            storeFile file('C:/jks/fresh.jks')
+            storePassword 'fresh189'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.mnevent.hz"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "wRQvUBDqQV7S6dqb1mCxt5",
+                GETUI_APP_KEY   : "zglSoGp7EV9x92syBVbe54",
+                GETUI_APP_SECRET: "TV5ATNH5euAEm6eIyEoBH"
+        ]
+        ndk {
+
+            moduleName "serial_port"
+            //设置支持的SO库架构
+            abiFilters "armeabi", "armeabi-v7a", "x86_64","x86"
+            // abiFilters 'arm64-v8a'
+        }
+
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/zxing-core-2.2.jar')
+    implementation 'com.zhy:percent-support-extends:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    /* compile 'javax.inject:javax.inject:1'*/
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.lzy.net:okrx2:2.0.2'
+    implementation 'com.lzy.net:okserver:2.0.5'
+    //竖向seekbar
+    implementation 'com.jaywei:PureVerticalSeekBar:1.0.0'
+    //圆角图片
+    implementation 'com.ruffian.library:RWidgetHelper:1.0.4'
+    //数据库
+    implementation 'org.litepal.android:java:3.0.0'
+    //dialog
+    implementation 'com.github.limxing:Android-PromptDialog:1.1.3'
+
+    implementation 'com.getui:sdk:2.11.1.0'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+
+    compile 'com.android.support:multidex:1.0.0'
+
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-27'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-27'//没有使用特殊Header，可以不加这行
+
+}

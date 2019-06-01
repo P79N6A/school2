@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/topbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#CDCDB4" >
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:text="货道方案"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/localversion"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:background="#bcbcbc"
+        android:layout_below="@+id/topbar_title"
+        android:layout_marginTop="10px">
+
+        <TextView
+            android:id="@+id/localversiontv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="目前本机的货道方案编号与名称："
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="240px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="强制为0"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/serverversion"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:background="#bcbcbc"
+        android:layout_below="@+id/localversion"
+        android:layout_marginTop="10px">
+
+        <TextView
+            android:id="@+id/serverversiontv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="服务器端的最新货道方案编号与名称："
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_get"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="获取"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inforl"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:background="#bcbcbc"
+        android:layout_below="@+id/serverversion"
+        android:layout_marginTop="10px">
+
+        <TextView
+            android:id="@+id/infotv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text=""
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="24sp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/getserverversion"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:background="#bcbcbc"
+        android:layout_below="@+id/inforl"
+        android:layout_marginTop="10px">
+
+        <Button
+            android:id="@+id/btn_getserverfile"
+            android:layout_width="520px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:text="下载最新的货道方案（含商品图片的下载）"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_getserverfile"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:text="*对商品有变化的轨道做下架处理，库存改为0"
+            android:layout_marginLeft="10px"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/changegoodstv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getserverversion"
+        android:layout_marginTop="10px"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        />
+
+</RelativeLayout>

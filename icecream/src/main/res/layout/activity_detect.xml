@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/name_text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:text="正在打开摄像头......"
+        android:textColor="@android:color/white"
+        />
+
+    <com.baidu.aip.face.TexturePreviewView
+        android:id="@+id/preview_view"
+        android:layout_width="800px"
+        android:layout_height="450px"/>
+
+    <TextureView
+        android:id="@+id/texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/preview_view"
+        android:textSize="28sp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/test_view"
+        android:layout_gravity="right"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/closeIv"
+        android:layout_width="80px"
+        android:layout_height="128px"
+        android:layout_marginLeft="60px"
+        android:layout_marginBottom="40px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/close3" />
+
+    <ImageView
+        android:id="@+id/countdownicon"
+        android:layout_width="240px"
+        android:layout_height="80px"
+        android:layout_marginRight="60px"
+        android:layout_marginBottom="60px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="80px"
+        android:background="@drawable/countdown1"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/countdowntv"
+        android:layout_width="120px"
+        android:layout_height="80px"
+        android:layout_marginRight="60px"
+        android:layout_marginBottom="60px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#F00"
+        android:textSize="48sp"
+        android:ems="10" />
+
+
+</RelativeLayout>
